@@ -1,0 +1,92 @@
+.audio-layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 248px 1fr 310px;
+  overflow: hidden;
+}
+
+.audio-center {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-0);
+  overflow: hidden;
+}
+
+.audio-transport {
+  height: 42px;
+  background: var(--bg-1);
+  border-bottom: 1px solid var(--border-1);
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.audio-canvases {
+  flex: 1;
+  display: grid;
+  grid-template-rows: 1fr 1.25fr;
+  gap: 1px;
+  background: var(--border-1);
+  overflow: hidden;
+}
+
+.audio-pane {
+  position: relative;
+  background: var(--bg-0);
+  overflow: hidden;
+}
+
+.audio-pane-label {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: var(--text-3);
+  background: rgba(9, 9, 11, 0.84);
+  padding: 2px 6px;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.audio-pane canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.audio-queue-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 7px 9px;
+  border-bottom: 1px solid var(--border-1);
+  cursor: pointer;
+}
+
+.audio-queue-item:hover {
+  background: var(--bg-2);
+}
+
+.audio-queue-item.active {
+  background: var(--bg-3);
+  border-left: 2px solid var(--rose);
+}
+
+.slice-card {
+  background: var(--bg-2);
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-sm);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.slice-card.active {
+  border-color: var(--border-active);
+}

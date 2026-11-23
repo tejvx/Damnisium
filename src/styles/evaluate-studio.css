@@ -1,0 +1,200 @@
+.eval-shell {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--bg-0);
+}
+
+.eval-header {
+  min-height: 50px;
+  background: var(--bg-1);
+  border-bottom: 1px solid var(--border-1);
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.eval-header-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.eval-body {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.eval-metrics-strip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  background: var(--bg-1);
+  border-bottom: 1px solid var(--border-1);
+  flex-wrap: wrap;
+}
+
+.metric-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-2);
+  border: 1px solid var(--border-1);
+  font-size: 11px;
+}
+
+.metric-chip-val {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--text-1);
+}
+
+.eval-split-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 260px 1fr 310px;
+  overflow: hidden;
+}
+
+.eval-batch-strip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  padding: 8px;
+  overflow-y: auto;
+  align-content: start;
+}
+
+.eval-canvas-wrap {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-0);
+}
+
+.eval-canvas-wrap canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.eval-conf-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.eval-conf-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.eval-conf-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.eval-conf-track {
+  height: 6px;
+  background: var(--bg-3);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.eval-conf-fill {
+  height: 100%;
+  background: var(--accent-grad);
+  box-shadow: var(--specular-top);
+}
+
+.eval-text-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+.eval-pane-col {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-right: 1px solid var(--border-1);
+}
+
+.eval-pane-col:last-child {
+  border-right: none;
+}
+
+.eval-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chat-bubble {
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-1);
+  background: var(--bg-2);
+  font-size: 12.5px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  user-select: text;
+}
+
+.chat-bubble.user {
+  background: var(--accent-soft);
+  border-color: var(--border-active);
+}
+
+.conf-matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 11px;
+}
+
+.conf-matrix-table th,
+.conf-matrix-table td {
+  border: 1px solid var(--border-1);
+  padding: 4px 6px;
+  text-align: center;
+}
+
+.conf-matrix-table th {
+  background: var(--bg-2);
+  color: var(--text-2);
+}
+
+.transcript-row {
+  display: flex;
+  gap: 10px;
+  padding: 7px 9px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-1);
+  background: var(--bg-2);
+  cursor: pointer;
+}
+
+.transcript-row:hover {
+  border-color: var(--border-active);
+}

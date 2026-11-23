@@ -1,0 +1,32 @@
+:root {
+  --bg-0: #09090b;
+  --bg-1: #100f12;
+  --bg-2: #17151a;
+  --bg-3: #1f1c24;
+  --bg-4: #27232e;
+  --border-1: rgba(255, 255, 255, 0.08);
+  --border-2: rgba(255, 255, 255, 0.14);
+  --border-active: rgba(244, 63, 94, 0.35);
+  --text-1: #ffffff;
+  --text-2: #a1a1aa;
+  --text-3: #71717a;
+  --rose: #ec4899;
+  --crimson: #be123c;
+  --accent: #e11d48;
+  --accent-grad: linear-gradient(135deg, #ec4899 0%, #be123c 100%);
+  --accent-soft: rgba(244, 63, 94, 0.14);
+  --card-sheen: linear-gradient(180deg, rgba(255, 255, 255, 0.035) 0%, transparent 100%);
+  --specular-top: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  --success: #10b981;
+  --success-soft: rgba(16, 185, 129, 0.14);
+  --warn: #f59e0b;
+  --warn-soft: rgba(245, 158, 11, 0.14);
+  --danger: #ef4444;
+  --danger-soft: rgba(239, 68, 68, 0.14);
+  --font-sans: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", "Cascadia Mono", "Consolas", monospace;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --radius-sm: 5px;
+  --radius-md: 7px;
+  --radius-lg: 10px;
+}

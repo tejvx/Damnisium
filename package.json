@@ -1,0 +1,25 @@
+{
+  "name": "damnisium",
+  "version": "1.0.0-beta.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync-ort": "node scripts/sync-ort.mjs",
+    "dev": "node scripts/sync-ort.mjs && vite",
+    "typecheck": "tsc --noEmit",
+    "build": "node scripts/sync-ort.mjs && tsc --noEmit && vite build",
+    "tauri": "tauri",
+    "build:portable": "powershell -ExecutionPolicy Bypass -File scripts/pack-portable.ps1"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.2",
+    "@tauri-apps/api": "^2.3.0",
+    "@tauri-apps/plugin-dialog": "^2.2.0",
+    "onnxruntime-web": "^1.20.1"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.3.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  }
+}
